@@ -1,17 +1,14 @@
-:partner-solution-project-name: partner-solution-repo-name
-:partner-solution-github-org: aws-quickstart
-:partner-product-name: Full Product Name
-:partner-product-short-name: Product Name
-:partner-company-name: Example Company Name, Ltd.
-:doc-month: January
-:doc-year: 2023
-:partner-contributors: John Smith, {partner-company-name}
+:partner-solution-project-name: cfn-ps-thousandeyes-amazon-connect
+:partner-solution-github-org: aws-ia
+:partner-product-name: Cisco ThousandEyes Last-Mile Connectivity
+:partner-product-short-name: ThousandEyes
+:partner-company-name: ThousandEyes (a part of Cisco)
+:doc-month: April
+:doc-year: 2022
+:partner-contributors: Hans Ashlock, ThousandEyes
 // :other-contributors: Akua Mansa, Trek10
-:aws-contributors: Janine Singh, AWS IoT Partner team
-:aws-ia-contributors: Toni Jones, AWS Integration & Automation team
-:deployment_time: 15 minutes
+:aws-contributors: Todd Escalona, AWS ISV Partner Management team
+:aws-ia-contributors: Vinod Shukla, AWS Integration & Automation team
+:deployment_time: 10 minutes
 :default_deployment_region: us-east-1
 // :private_repo:
-
-
-// For instructions on creating this deployment guide, refer to "Build your AWS Partner Solution documentation" (https://aws-ia-us-west-2.s3.us-west-2.amazonaws.com/docs/content/index.html#/).
