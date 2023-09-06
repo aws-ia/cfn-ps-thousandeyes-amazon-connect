@@ -1,5 +1,5 @@
 project:
-  name: quickstart-thousandeyes-amazon-connect
+  name: cfn-ps-thousandeyes-amazon-connect
   owner: hashlock@cisco.com
   package_lambda: true
   lambda_source_path: functions/source
@@ -13,7 +13,7 @@ tests:
     parameters:
       QSS3BucketName:  $[taskcat_autobucket]
       QSS3BucketRegion: $[taskcat_current_region]
-      QSS3KeyPrefix: quickstart-thousandeyes-amazon-connect/ 
+      QSS3KeyPrefix: cfn-ps-thousandeyes-amazon-connect/ 
       ThousandEyesUserToken: $[taskcat_genpass_32A]
       ThousandEyesUser: override
     regions:
