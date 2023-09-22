@@ -8,6 +8,10 @@ Metadata:
   LintSpellExclude:
     - ThousandEyes
     - customizing
+  cfn-lint:
+    config:
+      ignore_checks:
+        - E3030
   AWS::CloudFormation::Interface:
     ParameterGroups:
       - Label:
@@ -103,7 +107,7 @@ Resources:
         S3Bucket: !If [UsingDefaultBucket, !Sub '${QSS3BucketName}-${AWS::Region}', !Ref QSS3BucketName]
         S3Key: !Sub ${QSS3KeyPrefix}functions/packages/thousandeyes-connect/lambda.zip
       Handler: handler.http
-      Runtime: nodejs12.x
+      Runtime: nodejs18.x
       FunctionName: te-connect-v1-http
       MemorySize: 1024
       Timeout: 6
@@ -126,7 +130,7 @@ Resources:
         S3Bucket: !If [UsingDefaultBucket, !Sub '${QSS3BucketName}-${AWS::Region}', !Ref QSS3BucketName]
         S3Key: !Sub ${QSS3KeyPrefix}functions/packages/thousandeyes-connect/lambda.zip
       Handler: handler.network
-      Runtime: nodejs12.x
+      Runtime: nodejs18.x
       FunctionName: te-connect-v1-network
       MemorySize: 1024
       Timeout: 6
@@ -149,7 +153,7 @@ Resources:
         S3Bucket: !If [UsingDefaultBucket, !Sub '${QSS3BucketName}-${AWS::Region}', !Ref QSS3BucketName]
         S3Key: !Sub ${QSS3KeyPrefix}functions/packages/thousandeyes-connect/lambda.zip
       Handler: handler.connection
-      Runtime: nodejs12.x
+      Runtime: nodejs18.x
       FunctionName: te-connect-v1-connection
       MemorySize: 1024
       Timeout: 6
@@ -172,7 +176,7 @@ Resources:
         S3Bucket: !If [UsingDefaultBucket, !Sub '${QSS3BucketName}-${AWS::Region}', !Ref QSS3BucketName]
         S3Key: !Sub ${QSS3KeyPrefix}functions/packages/thousandeyes-connect/lambda.zip
       Handler: handler.agentinfo
-      Runtime: nodejs12.x
+      Runtime: nodejs18.x
       FunctionName: te-connect-v1-agentinfo
       MemorySize: 1024
       Timeout: 6
@@ -195,7 +199,7 @@ Resources:
         S3Bucket: !If [UsingDefaultBucket, !Sub '${QSS3BucketName}-${AWS::Region}', !Ref QSS3BucketName]
         S3Key: !Sub ${QSS3KeyPrefix}functions/packages/thousandeyes-connect/lambda.zip
       Handler: handler.status
-      Runtime: nodejs12.x
+      Runtime: nodejs18.x
       FunctionName: te-connect-v1-status
       MemorySize: 1024
       Timeout: 6
