@@ -37,7 +37,7 @@ Metadata:
 Conditions:
   UsingDefaultBucket: !Equals
     - !Ref QSS3BucketName
-    - 'aws-quickstart'
+    - 'aws-ia'
 Resources:
   HttpLogGroup:
     Type: AWS::Logs::LogGroup
@@ -760,7 +760,7 @@ Parameters:
     MaxLength: 32
     AllowedPattern: "[A-Za-z0-9]*"
     NoEcho: true
-  
+
   QSS3BucketName:
     AllowedPattern: '^[0-9a-zA-Z]+([0-9a-zA-Z-]*[0-9a-zA-Z])*$'
     ConstraintDescription:
